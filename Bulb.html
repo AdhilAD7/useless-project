@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mark charset="Bulb">
+    <mark name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Off Bulb Animation</title>
+    <style>
+        body {
+            background-color: black;
+        
+        }
+        h1 {
+            color: red;
+            text-align: right;
+            margin-top: -500px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\adhil\Off.jpg" id="image" onclick="turnOnOff()">
+    <h1></h1>
+    <script>
+        function turnOnOff() {
+            var image = document.getElementById('image');
+            if (image.src.match('Off')) {
+                image.src = "On.jpg"; 
+            } else {
+                image.src = "Off.jpg"; 
+            }
+        }
+    </script>
+</body>
+</html>
